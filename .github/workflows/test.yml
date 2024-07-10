@@ -16,7 +16,7 @@ jobs:
         - name: Cypress run
           uses: cypress-io/github-action@v6
           with:
-            command: npm run test
+            command: npm run test:pipeline
         - name: Uploading artifacts
           uses: actions/upload-artifact@v4
           if: always()

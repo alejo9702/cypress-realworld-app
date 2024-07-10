@@ -188,7 +188,8 @@
     "build": "vite build",
     "codesandbox:start:api": "yarn tsnode:not-instrumented --files backend/app.ts",
     "codesandbox:start": "NODE_ENV=development TSC_COMPILE_ON_ERROR=true concurrently \"vite\" yarn:start:api:codesandbox",
-    "postinstall": "husky install && patch-package"
+    "postinstall": "husky install && patch-package",
+    "test:pipeline": "cypress run --spec 'cypress/tests/ui/auth.spec.ts'"
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
