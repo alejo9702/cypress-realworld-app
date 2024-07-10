@@ -25,6 +25,7 @@ module.exports = defineConfig({
     runMode: 2,
   },
   env: {
+    RECORD_KEY: "434ac106-94af-4f12-b946-9b2794c7f7dc",
     apiUrl: "http://localhost:3001",
     mobileViewportWidthBreakpoint: 414,
     coverage: false,

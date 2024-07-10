@@ -1,9 +1,10 @@
-name: Cypress Tests
+name: Manual Cypress Tests implementation
 
 on:
-  push:
-    branches:
-      - develop
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Your name'
 
 jobs:
     Cypress-run:
