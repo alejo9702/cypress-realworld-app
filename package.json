@@ -189,7 +189,8 @@
     "codesandbox:start:api": "yarn tsnode:not-instrumented --files backend/app.ts",
     "codesandbox:start": "NODE_ENV=development TSC_COMPILE_ON_ERROR=true concurrently \"vite\" yarn:start:api:codesandbox",
     "postinstall": "husky install && patch-package",
-    "test:pipeline": "cypress run --spec 'cypress/tests/ui/auth.spec.ts'"
+    "test:pipeline": "cypress run --spec 'cypress/tests/ui/auth.spec.ts'",
+    "test:record": "cypress run --spec 'cypress/tests/ui/auth.spec.ts' --record --key 434ac106-94af-4f12-b946-9b2794c7f7dc"
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
